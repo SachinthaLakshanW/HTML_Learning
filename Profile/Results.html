@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+  </head>
+
+  <body>
+    <div id="results"></div>
+
+    <a href="Profile.html">Back to Form</a>
+
+    <script>
+      const resultsList = document.getElementById("results");
+
+      const params = new URLSearchParams(window.location.search);
+
+      params.forEach((value, name) => {
+        const line = document.createElement("div");
+        line.textContent = name + ": " + value;
+        resultsList.appendChild(line);
+      });
+    </script>
+  </body>
+</html>
