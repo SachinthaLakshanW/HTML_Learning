@@ -4,6 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skeleton Page</title>
+    <style>
+      /* 1. Reset default browser spacing */
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 2. Basic body styling */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      /* 3. Header styling */
+      header {
+        background-color: #af4c86;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      /* 4. Navigation bar */
+      nav {
+        background-color: #333;
+      }
+
+      nav ul {
+        list-style: none;
+
+        /* FLEXBOX START */
+        display: flex; /* makes items horizontal */
+        justify-content: center; /* center items */
+        gap: 1rem; /* space between links */
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem;
+      }
+
+      nav a:hover {
+        background-color: #555;
+      }
+
+      /* 5. Main layout */
+      main {
+        display: flex; /* FLEXBOX */
+        gap: 2rem;
+        padding: 1rem;
+        flex-wrap: wrap; /* allows stacking on small screens */
+      }
+
+      /* 6. Section (main content) */
+      section {
+        flex: 6; /* takes more space */
+      }
+
+      article {
+        margin-bottom: 1.5rem;
+      }
+
+      /* 7. Aside (sidebar) */
+      aside {
+        flex: 1; /* smaller than section */
+        background-color: #f4f4f4;
+        padding: 1rem;
+      }
+
+      /* 8. Image styling */
+      img {
+        max-width: 100%; /* responsive image */
+        height: auto;
+      }
+
+      figcaption {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      /* 9. Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+    </style>
   </head>
   <body>
     <header>
