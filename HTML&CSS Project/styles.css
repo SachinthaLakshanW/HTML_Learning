@@ -1,4 +1,4 @@
-/* Reset some defaults */
+/* Reset defaults */
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +16,10 @@ header {
   background-image: url('https://resources.nzft.co.nz/c/h/d/site_files/uploads/tinymce_upload/shutterstock_660933493.jpg');
   background-size: cover;
   background-position: center;
-  color: white;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
 
 /* Navbar */
@@ -34,8 +35,8 @@ nav ul li {
 }
 
 nav ul li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
   padding: 10px 0;
   display: block;
   transition: color 0.3s;
@@ -57,6 +58,7 @@ nav ul li a:hover {
 main {
   background-color: #fafafa;
   padding: 20px;
+  border-radius: 5px;
 }
 
 main article {
@@ -67,21 +69,38 @@ main img {
   width: 100%;
   height: auto;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 /* Sidebar */
 aside {
   background-color: #f0f0f0;
   padding: 20px;
+  border-radius: 5px;
+}
+
+aside ul {
+  margin-top: 10px;
+  list-style: disc inside;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+aside ul li a:hover {
+  color: #ff6600;
 }
 
 /* Footer */
 footer {
   text-align: center;
   background-color: #333;
-  color: #fff;
+  color: white;
   padding: 15px 0;
   margin-top: 20px;
+  border-radius: 5px 5px 0 0;
 }
 
 /* Responsive */
